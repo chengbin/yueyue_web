@@ -1,14 +1,41 @@
-<!DOCTYPE html>
-<html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-  <title>YueyueWeb</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<link href="/stylesheets/yueyue.css" media="all" rel="stylesheet" type="text/css" />
+	<title>约约360</title>
+	<%= csrf_meta_tag %>
 </head>
+
 <body>
+	<div class="wrapper">
+		<div id="hd">
+			
+			<div class="nav">
+				
+				发起约约    | 
+				约约广场
+				
 
-<%= yield %>
+			</div>
+		</div>
 
+		<div id="bd">
+			<%= yield %>
+		</div>
+
+		<div id="ft">
+			<div>
+				<a href="#hd">回顶部</a>
+			</div>
+			给约约网提意见
+		<div>
+			<%= link_to "Android客户端", "./yueyue.apk"%>
+		</div>
+			<div class="copyright">&copy; 2011 约约网</div>
+		</div>
+	</div>
 </body>
 </html>

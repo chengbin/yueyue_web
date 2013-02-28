@@ -1,0 +1,276 @@
+body, form, p, h1, h2, h3, ul {
+    margin: 0;
+    padding: 0;
+}
+em {
+    font-style: normal;
+}
+input, textarea, button, select {
+    font-size: 14px;
+}
+h1 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+h2, h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+h3 {
+    color: #006600;
+    font-weight: 400;
+    padding-top: 5px;
+}
+h1 span, h2 span, h3 span {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+}
+img {
+    border: 0 none;
+}
+p {
+    margin-bottom: 10px;
+}
+td {
+    vertical-align: top;
+}
+a:link {
+    color: #336699;
+    text-decoration: none;
+}
+a:visited {
+    color: #666699;
+    text-decoration: none;
+}
+a:hover {
+    background: none repeat scroll 0 0 #003399;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a:active {
+    background: none repeat scroll 0 0 #FF9933;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+body {
+    font: 14px/1.4 arial,sans-serif;
+}
+.ft form {
+    margin: 0;
+}
+.input_basic, .textarea_basic {
+    width: 280px;
+}
+#bd {
+    border-bottom: 1px solid #CCCCCC;
+    padding: 3px 3px 5px;
+}
+#ft {
+    color: #999999;
+    margin: 5px 0;
+    padding: 1px 3px;
+}
+.wrapper {
+    padding: 5px;
+}
+.error {
+    color: #FF0000;
+    margin-bottom: 10px;
+}
+.tip p {
+    color: #999999;
+    margin-bottom: 5px;
+}
+.mod li {
+    list-style: none outside none;
+}
+.ft {
+    border-top: 1px solid #CCCCCC;
+    color: #999999;
+    padding-top: 5px;
+}
+.forbidden {
+    color: #999999;
+}
+.list td {
+    line-height: 1.2;
+    padding: 5px;
+    text-align: center;
+}
+.list td span {
+    color: #333333;
+}
+.list span {
+    color: #999999;
+}
+.item p {
+    color: #333333;
+    margin: 0;
+    word-wrap: break-word;
+}
+.list .item {
+    border-bottom: 1px solid #DEDEDE;
+    color: #333333;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    word-wrap: break-word;
+}
+.links {
+    color: #999999;
+    padding-top: 5px;
+}
+.board, .comment, .reply {
+    border-top: 1px solid #CCCCCC;
+}
+.board .say {
+    margin: 0;
+}
+.reply, .reply .say {
+    margin-bottom: 5px;
+}
+.say {
+    margin-bottom: 10px;
+}
+input.wrap {
+    width: 95%;
+}
+.entry {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+.entry .content {
+    margin: 10px 0 30px;
+}
+.info {
+    color: #999999;
+    margin-bottom: 10px;
+}
+.info td em {
+    color: #999999;
+}
+.info td span {
+    color: #333333;
+}
+.intro {
+    border-bottom: 1px solid #EEEEEE;
+    padding: 5px 0;
+}
+.entry p {
+    color: #333333;
+    margin-bottom: 5px;
+}
+.nav {
+    background-color: #E9F4E9;
+    color: #999999;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding: 1px 3px;
+}
+.nav a {
+    color: #0C7823;
+    font-size: 14px;
+}
+.rel {
+    color: #999999;
+}
+.tabs {
+    padding-bottom: 10px;
+}
+.tabs em {
+    color: #999999;
+}
+.date {
+    color: #999999;
+}
+.nav a:hover {
+    background-color: #0C7823;
+    color: #FFFFFF;
+}
+.paginator {
+    padding-bottom: 5px;
+}
+.paginator span {
+    color: #333333;
+}
+.followers {
+    color: #999999;
+}
+a.lnk-srh {
+    float: right;
+    padding: 0 5px;
+}
+a.founder {
+    white-space: nowrap;
+}
+.new {
+    color: #FF3300;
+    font-size: 14px;
+}
+.notification {
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    padding: 5px 0;
+}
+.list .last, .last {
+    border: 0 none;
+}
+.members td span {
+    color: #999999;
+}
+#md-group-subject-search .list em, #md-srh .list em, .list .new {
+    color: #FF3300;
+}
+#md-srh .paginator {
+    margin-bottom: 10px;
+}
+#md-album td span, #md-album td {
+    color: #999999;
+    text-align: left;
+}
+#md-connect form, #md-connect .item {
+    margin-bottom: 10px;
+}
+#md-msg span, #md-msg p {
+    display: block;
+    text-align: center;
+}
+#md-group-intro .info, #md-biz .info, #md-events .info, #md-userinfo .info {
+    color: #333333;
+}
+#md-userinfo .intro {
+    border: 0 none;
+}
+#md-rec .item .info, #md-say .item .info, #md-biz .item .info, #md-profile .item .info {
+    border-bottom: 1px solid #DEDEDE;
+    color: #999999;
+}
+#bd .list .item .info {
+    border: 0 none;
+}
+#md-profile .info {
+    border-bottom: 1px solid #CCCCCC;
+}
+#md-group h3 {
+    border-top: 1px solid #CCCCCC;
+}
+#md-biz .links {
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    padding-bottom: 5px;
+}
+#md-profile .links {
+    border-top: 1px solid #CCCCCC;
+}
+/* add by linhai */
+.txt_submit_button {
+	background-color:transparent;
+	border:0px;
+	color: #336699;
+    text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+.txt_submit_button:hover {
+    cursor: pointer
+}
