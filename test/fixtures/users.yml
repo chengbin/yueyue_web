@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: chengbin1@huawei.com
+  hashed_password: kkk
+  salt: kkk
+
+two:
+  name: chengbin2@huawei.com
+  hashed_password: ddd
+  salt: ddd
