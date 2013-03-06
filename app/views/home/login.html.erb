@@ -1,0 +1,29 @@
+<% if (flash[:notice]) %>
+<div class="error">
+	<%= flash[:notice]%>
+</div>
+<% end %>
+
+<%= form_tag do %>
+<div>
+	<label>你的邮箱地址</label>
+	<div class="item">
+		<%= text_field_tag(:name) %>
+	</div>
+	<label>你在约约的密码</label>
+	<div class="item">
+		<%= password_field_tag(:password) %>
+	</div>
+	<div class="submit-item">
+		<%= submit_tag "登录" %>
+		<%= link_to '注册', :controller => "users", :action => "new" %>  
+		忘记密码
+	</div>
+</div>
+<% end %>
+<div>
+<%= link_to(image_tag("sina_weibo.png"), "www.sina.com") %>
+</div>
+<div>
+<%= link_to(image_tag("qq_weibo.png"), "www.qq.com") %>
+</div>
