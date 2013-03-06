@@ -2,11 +2,14 @@
 require 'digest/sha2'
 
 class User < ActiveRecord::Base
-  validates :name, :presence => true, :uniqueness => true
-  validates :password, :confirmation => true
   attr_accessible :name, :password_confirmation, :password
   attr_reader :password
+  
+  validates :name, :presence => {:message => "邮箱未输入"}, :uniqueness => {:message => "邮箱已被注册"}
+  validates :password, :confirmation => {:message => "密码不一致"}
   validate :password_must_be_present
+  validates :name, :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/,
+      :message => "邮件格式不正确" }
 
   def User.authenticate(name, password)
     if user = find_by_name(name)
