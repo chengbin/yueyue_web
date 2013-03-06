@@ -1,18 +1,16 @@
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <h2>错误:</h2>
 
       <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+      <% @user.errors.each do |msg| %>
+        <li><%= @user.errors[msg][0] %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
-
-  <fieldset>
-  <legend>用户信息</legend>
+  <p>
   <div class="field">
     <%= f.label :name, "邮箱" %><br />
     <%= f.text_field :name, :size => 40 %>
@@ -28,5 +26,4 @@
   <div class="actions">
     <%= f.submit "提交" %>
   </div>
-  </fieldset>
 <% end %>
