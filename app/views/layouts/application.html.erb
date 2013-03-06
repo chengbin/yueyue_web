@@ -12,7 +12,16 @@
 <body>
 	<div class="wrapper">
 		<div id="hd">
-			
+			<div class="logo"> 
+							<%= image_tag "yueyue.png"%>
+							深圳 | 
+							<% if !session[:user_id].blank? && user = User.find(session[:user_id]) %>
+							[<%= link_to user.nickname, user %>]
+							<%= link_to "退出", {:controller => "home", :action => "logout"}%>
+							<% else %>
+							<%= link_to "登录", {:controller => "home", :action => "login"}%>
+							<% end %>
+						</div>
 			<div class="nav">
 				
 				发起约约    | 

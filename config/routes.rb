@@ -3,6 +3,8 @@ YueyueWeb::Application.routes.draw do
 
 
   get "home/index"
+  get "home/login"
+  get "home/logout"
 
   get "yueyue/index"
 
