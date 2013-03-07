@@ -40,9 +40,8 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    # @user = User.new(:name=>params[:user][:name], :password_confirmation=>params[:user][:password_confirmation])
     @user = User.new(params[:user])
-    # @user.password = params[:user][:password]
+    @user.nickname = @user.name
 
     respond_to do |format|
       if @user.save

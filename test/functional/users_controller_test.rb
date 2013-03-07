@@ -48,4 +48,10 @@ class UsersControllerTest < ActionController::TestCase
 
     assert_redirected_to users_path
   end
+  
+  test "default nickname should be user name" do
+    post :create, :user=>@input_attributes
+    input_user = User.find_by_name(@input_attributes[:name])
+    assert_equal input_user.name, input_user.nickname
+  end
 end
