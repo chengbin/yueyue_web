@@ -17,9 +17,9 @@
 							深圳 | 
 							<% if !session[:user_id].blank? && user = User.find(session[:user_id]) %>
 							[<%= link_to user.nickname, user %>]
-							<%= link_to "退出", {:controller => "home", :action => "logout"}%>
+							<%= link_to "退出", {:controller => "/home", :action => "logout"}%>
 							<% else %>
-							<%= link_to "登录", {:controller => "home", :action => "login"}%>
+							<%= link_to "登录", {:controller => "/home", :action => "login"}%>
 							<% end %>
 						</div>
 			<div class="nav">

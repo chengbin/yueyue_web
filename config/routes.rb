@@ -1,4 +1,9 @@
 YueyueWeb::Application.routes.draw do
+  namespace :event do
+    resources :karaokes
+  end
+
+
   resources :users
 
 

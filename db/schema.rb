@@ -11,7 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130306143101) do
+ActiveRecord::Schema.define(:version => 20130307155938) do
+
+  create_table "event_karaokes", :force => true do |t|
+    t.string   "title"
+    t.string   "place"
+    t.datetime "start_time"
+    t.integer  "paytype"
+    t.integer  "people_number_min"
+    t.integer  "people_number_max"
+    t.integer  "per_pay"
+    t.integer  "status"
+    t.text     "describe"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"

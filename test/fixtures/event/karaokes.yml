@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  place: MyString
+  start_time: 2013-03-07 23:59:38
+  paytype: 1
+  people_number_min: 1
+  people_number_max: 1
+  per_pay: 1
+  status: 1
+  describe: MyText
+
+two:
+  title: MyString
+  place: MyString
+  start_time: 2013-03-07 23:59:38
+  paytype: 1
+  people_number_min: 1
+  people_number_max: 1
+  per_pay: 1
+  status: 1
+  describe: MyText

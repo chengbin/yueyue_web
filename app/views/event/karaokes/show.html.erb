@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @event_karaoke.title %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%= @event_karaoke.place %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%= @event_karaoke.start_time %>
+</p>
+
+<p>
+  <b>Paytype:</b>
+  <%= @event_karaoke.paytype %>
+</p>
+
+<p>
+  <b>People number min:</b>
+  <%= @event_karaoke.people_number_min %>
+</p>
+
+<p>
+  <b>People number max:</b>
+  <%= @event_karaoke.people_number_max %>
+</p>
+
+<p>
+  <b>Per pay:</b>
+  <%= @event_karaoke.per_pay %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @event_karaoke.status %>
+</p>
+
+<p>
+  <b>Describe:</b>
+  <%= @event_karaoke.describe %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_karaoke_path(@event_karaoke) %> |
+<%= link_to 'Back', event_karaokes_path %>

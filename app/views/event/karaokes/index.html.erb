@@ -1,0 +1,39 @@
+<h1>Listing event_karaokes</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Place</th>
+    <th>Start time</th>
+    <th>Paytype</th>
+    <th>People number min</th>
+    <th>People number max</th>
+    <th>Per pay</th>
+    <th>Status</th>
+    <th>Describe</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @event_karaokes.each do |event_karaoke| %>
+  <tr>
+    <td><%= event_karaoke.title %></td>
+    <td><%= event_karaoke.place %></td>
+    <td><%= event_karaoke.start_time %></td>
+    <td><%= event_karaoke.paytype %></td>
+    <td><%= event_karaoke.people_number_min %></td>
+    <td><%= event_karaoke.people_number_max %></td>
+    <td><%= event_karaoke.per_pay %></td>
+    <td><%= event_karaoke.status %></td>
+    <td><%= event_karaoke.describe %></td>
+    <td><%= link_to 'Show', event_karaoke %></td>
+    <td><%= link_to 'Edit', edit_event_karaoke_path(event_karaoke) %></td>
+    <td><%= link_to 'Destroy', event_karaoke, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Karaoke', new_event_karaoke_path %>

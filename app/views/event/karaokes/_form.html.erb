@@ -1,0 +1,53 @@
+<%= form_for(@event_karaoke) do |f| %>
+  <% if @event_karaoke.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event_karaoke.errors.count, "error") %> prohibited this event_karaoke from being saved:</h2>
+
+      <ul>
+      <% @event_karaoke.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :place %><br />
+    <%= f.text_field :place %>
+  </div>
+  <div class="field">
+    <%= f.label :start_time %><br />
+    <%= f.datetime_select :start_time %>
+  </div>
+  <div class="field">
+    <%= f.label :paytype %><br />
+    <%= f.number_field :paytype %>
+  </div>
+  <div class="field">
+    <%= f.label :people_number_min %><br />
+    <%= f.number_field :people_number_min %>
+  </div>
+  <div class="field">
+    <%= f.label :people_number_max %><br />
+    <%= f.number_field :people_number_max %>
+  </div>
+  <div class="field">
+    <%= f.label :per_pay %><br />
+    <%= f.number_field :per_pay %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.number_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :describe %><br />
+    <%= f.text_area :describe %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
